@@ -4,11 +4,11 @@ WORKDIR /app
 
 COPY . .
 
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
-RUN pip install gunicorn
+RUN pip3 install gunicorn
 
-RUN pip install psycopg2-binary
+RUN pip3 install psycopg2-binary
 
 EXPOSE 8000
 
